@@ -1,46 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Cairo', sans-serif;
-}
-
-.title{
-    font-size: 5rem;
-    margin-bottom: 0px;
+body {
+  font-family: "Cairo", sans-serif;
 }
 
-.container{
-    min-height: 100vh;
-    display: flex;
-    align-items: center; 
-    flex-direction: column;
-    justify-content: center;
+.title {
+  font-size: 4rem;
 }
 
-.time_container{
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.up {
+  margin-top: 2rem;
+  box-shadow: 5px 5px 100px black;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+/* 
+#line {
+  display: block;
+  width: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+
+  height: 1px;
+
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  background-color: rgb(146, 106, 106);
+} */
+.time_container {
   display: flex;
   justify-content: space-around;
 }
 
-.cont{
-    text-align: center;
-    font-weight: 200;
+.cont {
+  text-align: center;
+  font-weight: 200;
 }
-.TimeDay, .TimeHour,.TimeMinute,.TimeSecond{
-    font-size: 3rem;
+.TimeDay,
+.TimeHour,
+.TimeMinute,
+.TimeSecond {
+  font-size: 3rem;
 }
 
 .image {
-    border-radius: 4px;
-    padding: 5px;
-    width: 30%;
-  }
+  border-radius: 4px;
+  padding: 5px;
+  width: 30%;
+  margin-top: 5rem;
+}
 
-  .copyright,a{
-      text-decoration: none;
-      color: black;
-  }
-
+.copyright,
+a {
+  text-decoration: none;
+  color: black;
+}

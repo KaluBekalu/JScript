@@ -10,13 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <a href='https://www.freepik.com/vectors/calendar'>Calendar vector created by pikisuperstar - www.freepik.com</a> -->
     <title>Countdown</title>
   </head>
   <body>
     <section class="container">
-      <div>
-        <h2 class="title">NEXT BIRTHDAY!</h2>
+      <div class="up">
+        <h2 class="title">DAYS LEFT FOR GRADUATION!</h2>
         <div class="time_container">
           <div class="cont">
             <h3 class="TimeDay">--</h3>
@@ -35,6 +34,13 @@
             <h3 class="Textday">Seconds</h3>
           </div>
         </div>
+      </div>
+
+      <div>
+        <form action="#" onSubmit = "setDate()">
+          <input class="date" type="date" name="date" id="" />
+          <button type="submit">Set Date</button>
+        </form>
       </div>
       <img class="image" src="./calandar.jpg" alt="" />
       <div class="copyright">
