@@ -3,7 +3,18 @@ const min = sec * 60;
 const hr = min * 60;
 const day = hr * 24;
 var d = "";
-var status = "low";
+var status = "";
+
+document.querySelector(".error").innerHTML = "";
+const takeEvent = () => {
+  var eventName = prompt("Please enter your event name");
+
+  if (eventName == null || eventName == "") {
+    document.querySelector(".title").innerHTML = "Days left for my event";
+  } else {
+    document.querySelector(".title").innerHTML ="Days left for "+ eventName;
+    }
+};
 
 const cntdwn = () => {
   const monthNames = [
@@ -35,13 +46,18 @@ const cntdwn = () => {
     document.querySelector(".TimeHour").innerHTML = hours;
     document.querySelector(".TimeMinute").innerHTML = minutes;
     document.querySelector(".TimeSecond").innerHTML = seconds;
+    document.querySelector(".error").innerHTML = "";
+    
   } else if (status === "low") {
     document.querySelector(".TimeDay").innerHTML = "--";
     document.querySelector(".TimeHour").innerHTML = "--";
     document.querySelector(".TimeMinute").innerHTML = "--";
     document.querySelector(".TimeSecond").innerHTML = "--";
+    document.querySelector(".error").innerHTML = "Date Invalid! Please select a valid date from the future!";
   }
 };
+// takeEvent();
+
 setInterval(cntdwn, 1000);
 
 const setDate = (e) => {
